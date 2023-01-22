@@ -27,11 +27,6 @@ class Converter:
                 shutil.copy2(m4a,self.target)
                 print("El archivo " + mp3 + " ya es un mp3")
 
-                
-    def test(self):
-        print("convertir")
-        wav_audio = AudioSegment.from_file("/home/Nol/Música/nueva3/sera.m4a", format="m4a")
-        wav_audio.export("/home/Nol/Música/dest/sera2.mp3", format="mp3")    
 
     def run(self):
         dir_list=self.getsourcefiles()
